@@ -25,21 +25,25 @@
 
     0%,
     100% {
+        /* top left */
         left: 350px;
         top: 50px;
     }
 
     25% {
+        /* top right */
         left: 750px;
         top: 50px;
     }
 
     50% {
+        /* bottom right */
         left: 750px;
         top: 450px;
     }
 
     75% {
+        /* bottom left */
         left: 350px;
         top: 450px;
     }

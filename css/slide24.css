@@ -1,0 +1,51 @@
+.outerbox {
+    height: 400px;
+    width: 400px;
+    border: 5px solid purple;
+    position: absolute;
+    display: inline-block;
+    top: 100px;
+    left: 400px;
+}
+
+.innerbox {
+    height: 100px;
+    width: 100px;
+    background-color: lightskyblue;
+    position: relative;
+    top: 50px;
+    left: 500px;
+    animation-name: loop;
+    animation-delay: 1s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes loop {
+
+    0%,
+    100% {
+        /* top left */
+        left: 350px;
+        top: 50px;
+    }
+
+    25% {
+        /* top right */
+        left: 750px;
+        top: 50px;
+    }
+
+    50% {
+        /* bottom left */
+        left: 350px;
+        top: 450px;
+    }
+
+    75% {
+        /* bottom right */
+        left: 750px;
+        top: 450px;
+    }
+}
