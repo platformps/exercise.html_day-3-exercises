@@ -1,0 +1,42 @@
+#parent {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+}
+       
+#square {
+    width: 570px;
+    height: 580px;
+    margin: 100px 100px 100px 100px;
+    border: 4px solid purple;
+}
+
+#traceBoxX {
+    width: 65px;
+    height: 65px;
+    top: 20px;
+    left: 200px;
+    background-color: teal;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-name: traceBox;
+    animation-duration: 4s; 
+}
+
+@keyframes traceBox {
+   0% {top: -6%; left: -6%;}
+   25% {top: -6%; left: 94%;}
+   50% {top: 94%; left: -6%;}
+   75% {top: 94%; left: 94%;}
+   100% {top: -6%; left: -6%;}
+}
+
+
+0% {top: -6%; left: -6%;}
+25% {top: -6%; left: 94%;}
+
+50% {top: 94%; left: 94%;}
+
+75% {top: 94%; left: -6%;}
+
+100% {top: -6%; left: -6%;}
