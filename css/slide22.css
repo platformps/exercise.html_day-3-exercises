@@ -1,0 +1,21 @@
+#movingBox {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    animation-iteration-count: infinite;
+    animation-name: movingBox;
+    animation-duration: 1.2s;
+    animation-direction: alternate 
+}
+
+@keyframes movingBox {
+    from {
+        margin-left: 600px;
+        transform: scale(1, 1);
+    }
+    to {
+        margin-left: 120px;
+        transform: scale(1, 1);
+    }
+    50% {transform: scale(.1, .1);}    
+}
