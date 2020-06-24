@@ -90,7 +90,8 @@ td {
         width: 150px;
         height: 110px;
         background-image: none;
-        background-color: yellow;
+        background-image: linear-gradient(to bottom right, rgb(246, 255, 115), rgb(106, 107, 16));
+       /* background-color: yellow; */
         color: purple;
         border: 3px dashed purple;
     }
