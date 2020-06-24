@@ -1,0 +1,17 @@
+.border_box{
+  height: 400px;
+  width: 400px;
+  border-color: purple;
+  background-color: white;
+  padding: inherit;
+  border-style: dotted;
+  top: 50px;
+  left: 200px;
+}
+.moving_box{
+  height: 50px;
+  width: 50px;
+  background-color: skyblue;
+  margin: 0px;
+  border: 0px;
+}
