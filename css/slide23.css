@@ -13,12 +13,12 @@
     background-color: blue;
     top: -25px;
     left: -25px;
-    animation-name: borderloop;
+    animation-name: border-loop;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
-@keyframes borderloop {
+@keyframes border-loop {
     0%{
         top: -25px;
         left: -25px;
