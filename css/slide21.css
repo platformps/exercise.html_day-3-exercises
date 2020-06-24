@@ -1,7 +1,7 @@
 .container {
     width: 50%;
     height: auto;
-    margin: 10% 20%;
+    margin: 10% 25%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
