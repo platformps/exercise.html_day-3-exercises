@@ -1,0 +1,41 @@
+.container {
+    position: relative;
+    width: 90%;
+    height: 20%;
+    margin: 10% 30%;
+}
+
+.outter_box {
+    width: 600px;
+    height: 600px;
+    border: 5px solid #8e2de2;
+}
+
+.inner_box {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin: -5% 0 0 13%;
+    background-color: skyblue;
+    border: 2px solid black;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 200;
+    color: white;
+    font-size: 30px;
+}
+
+@keyframes animation {
+    100% {transform: translateX(230px);}
+    0% {transform: translateX(-220px);}
+}
+
+.animation {
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
