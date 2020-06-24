@@ -1,19 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head> 
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      animation-name: MovingBox;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      
+    }
 
-<!-- ----------------------------------------------------------------- -->
-<!-- ----------------------------------------------------------------- -->
-<!-- ----------------------------------------------------------------- -->
-<head> <!-- header begins here -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+   @keyframes MovingBox {
+     0% {background-color:red; left:50px; top:50px;}
+     10% {background-color:red; left: 100px; top:100px;}
+     35% {background-color:red; left:200px; top:200px;}
+     50% {background-color:red; left:0px; top:200px;}
+     85% {background-color:red; left:0px; top:0px;}
+   }
 
+
+   </style>
   <link href="./css/slide22.css" rel="stylesheet">
   <script type="text/javascript" src="./js/header-functions.js"></script>
-
-</head> <!-- header ends here -->
+ </head> <!-- header ends here -->
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
@@ -33,9 +48,9 @@
 <!-- ---------------------------------------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------- -->
 <body> <!-- body begins here -->
-  The quickest of brown foxes
+  
 
-
+  
 
 
   <!-- ====================================================== -->
@@ -46,10 +61,6 @@
   </footer> <!-- footer of page ends here -->
   <!-- ====================================================== -->
   <!-- ====================================================== -->
-
+  <div></div>
 </body>
-<!-- ---------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------- -->
-
 </html>
