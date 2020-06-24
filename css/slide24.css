@@ -1,0 +1,43 @@
+.bigBox {
+    position: absolute;
+    top: calc(50vh - 200px);
+    left: calc(50vw - 200px);
+    height: 400px;
+    width: 400px;
+    border: solid 5px purple;
+}
+
+.smallBox {
+    position: absolute;
+    top: calc(50vh - 250px);
+    left: calc(50vw - 50px);
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    animation: aroundThaWorld 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes aroundThaWorld {
+    0% {
+        top: calc(50vh - 250px);
+        left: calc(50vw - 250px);
+    }
+    25% {
+        top: calc(50vh - 250px);
+        left: calc(50vw + 150px);
+    }
+    50% {
+        top: calc(50vh + 150px);
+        left: calc(50vw - 250px);
+    }
+    75% {
+        top: calc(50vh + 150px);
+        left: calc(50vw + 150px);
+    }
+    100% {
+        top: calc(50vh - 250px);
+        left: calc(50vw - 250px);
+    }
+ }  
