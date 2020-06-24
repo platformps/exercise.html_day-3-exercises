@@ -1,0 +1,38 @@
+.bigPicture{
+    position: relative;
+}
+
+.div1{
+    width: 300px;
+    height:300px;
+    border:10px solid blue;
+    margin :20px;
+    position: absolute;
+    top:0;
+    left:0;
+
+}
+
+
+
+.div2{
+    top:0px;
+    left:120px;
+    width: 50px;
+    height:50px;
+    background-color:blue;
+    border:0;
+    animation-name: trace;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    margin :20px;
+    position: relative;
+}
+@keyframes trace{
+   20%{top:0px; left:300px;}
+   40%{top:300px; left: 300px}
+   60%{top:300px; left: -30px; }
+   80%{top:0px; left: -30px;}
+   100%{top:0px; left: 120px;}
+}
+
