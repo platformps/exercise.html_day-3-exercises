@@ -1,5 +1,7 @@
 div {
-  width: 100px;
+  width: 120px;
   height: 100px;
-  background: lightblue;
+  border-radius: 12px;
+  background-color: lightblue;
+  background-image: linear-gradient(to bottom right, lightblue, blue);
 }
