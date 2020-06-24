@@ -1,0 +1,41 @@
+html{
+    width: 100%;
+    height: 100%;
+    background: yellow;
+}
+
+#purple-box{
+    height: 500px;
+    width: 500px;
+    border: purple 11px solid;
+    background: white;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#blue-box{
+    height: 100px;
+    width: 100px;
+    background: blue;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    animation: blue-box-path 5s;
+    animation-iteration-count: infinite;
+}
+
+#container{
+    background: yellowgreen;
+    position: static;
+    height: 1000px;
+    width: 1000px;
+}
+
+@keyframes blue-box-path{
+    0%{}
+    25%{transform: translateX(500px)}
+    50%{transform: translateY(500px) translateX(500px)}
+    75%{transform: translateX(0px) translateY(500px)}
+    100%{transform: translateY(0px) translateX(0px)}
+}
