@@ -17,13 +17,6 @@ td {
     height: 200px;
 }
 
-/*
-.text{
-    position: relative;
-    top: 25px;
-    left: 30px;
-}    */
-
 #shake {
     animation-iteration-count: infinite;
     animation-name: shake;
