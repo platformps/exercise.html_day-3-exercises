@@ -5,3 +5,8 @@ div {
   background-color: lightblue;
   background-image: linear-gradient(to bottom right, lightblue, blue);
 }
+
+th{
+  padding: 50px;
+  text-align: center;
+}
