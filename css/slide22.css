@@ -5,7 +5,7 @@
   margin-left: 50px;
   background-color: #df9c5e;
   animation-name: pendulum;
-  animation-timing-function: step-start;
+  animation-timing-function: ease-in-out;
   animation-duration: 2s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
