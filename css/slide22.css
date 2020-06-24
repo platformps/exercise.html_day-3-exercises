@@ -1,0 +1,17 @@
+.mybox {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  position: relative;
+  animation: movingbox 3s infinite alternate;
+}
+
+#mybox {animation-timing-function: ease-in;}
+
+@keyframes movingbox {
+  from {left: 0px;}
+  to {left: 700px;}
+  0%   {top: 20px; width: 200px; height: 200px;}
+  50%  {top: 120px; width: 20px; height: 20px;}
+  100%  {top: 20px; width: 200px; height: 200px;}
+}
