@@ -1,0 +1,365 @@
+.container {
+    height: 90vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px 20px
+  }
+  .cell {
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    padding: 4rem;
+    height: 50px;
+    width: 50px;
+  }
+
+  .cell-1:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+ 
+  .cell-2 {
+    
+    background: red;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+  }
+  
+  .cell-2:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .cell-3:hover
+{
+        border-radius:50%;
+}
+
+  .cell-4:hover {
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: gold;
+    border: 2px solid #999;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+  .cell-9:hover {  
+    background-repeat: no-repeat;
+    background-position: left top; 
+    padding-top:95px;
+    margin-bottom:60px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    animation-name: tada;
+    -webkit-animation-name: tada; 
+ }
+ 
+ @-webkit-keyframes tada { 
+    0% {-webkit-transform: scale(1);}
+    10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);} 
+    30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+    40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);} 
+    100% {-webkit-transform: scale(1) rotate(0);} 
+ }
+ 
+ @keyframes tada { 
+    0% {transform: scale(1);} 
+    10%, 20% {transform: scale(0.9) rotate(-3deg);} 
+    30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);} 
+    40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);} 
+    100% {transform: scale(1) rotate(0);}
+ }
+ .tada { 
+    -webkit-animation-name: tada; 
+    animation-name: tada; 
+ }
+
+
+ .cell-11:hover { 
+    background-image: url(/css/images/logo.png); 
+    background-repeat: no-repeat;
+    background-position: left top; 
+    padding-top:95px;
+    margin-bottom:60px;
+    -webkit-animation-duration: 10s; 
+    animation-duration: 10s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-transform-origin: top center; 
+    transform-origin: top center; 
+    -webkit-animation-name: swing; 
+    animation-name: swing; 
+ }
+ 
+ @-webkit-keyframes swing { 
+    20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; } 
+    20% { -webkit-transform: rotate(15deg); } 
+    40% { -webkit-transform: rotate(-10deg); } 
+    60% { -webkit-transform: rotate(5deg); } 
+    80% { -webkit-transform: rotate(-5deg); } 
+    100% { -webkit-transform: rotate(0deg); } 
+ }
+ 
+ @keyframes swing { 
+    20% { transform: rotate(15deg); } 
+    40% { transform: rotate(-10deg); } 
+    60% { transform: rotate(5deg); } 
+    80% { transform: rotate(-5deg); } 
+    100% { transform: rotate(0deg); } 
+ }
+ 
+ .swing { 
+    -webkit-transform-origin: top center; 
+    transform-origin: top center; 
+    -webkit-animation-name: swing; 
+    animation-name: swing; 
+ }
+
+
+
+ .cell-12:hover {
+    -moz-transform: rotate(16deg) skew(-32deg, -27deg);
+    -webkit-transform: rotate(16deg) skew(-32deg, -27deg);
+    -o-transform: rotate(16deg) skew(-32deg, -27deg);
+    -ms-transform: rotate(16deg) skew(-32deg, -27deg);
+    transform: rotate(16deg) skew(-32deg, -27deg);
+    }
+
+    @keyframes flickerAnimation {
+        0%   { opacity:0.4; }
+        50%  { opacity:0; }
+        100% { opacity:0.4; }
+      }
+      @-o-keyframes flickerAnimation{
+        0%   { opacity:0.4; }
+        50%  { opacity:0; }
+        100% { opacity:0.4; }
+      }
+      @-moz-keyframes flickerAnimation{
+        0%   { opacity:0.4; }
+        50%  { opacity:0; }
+        100% { opacity:0.4; }
+      }
+      @-webkit-keyframes flickerAnimation{
+        0%   { opacity:0.4; }
+        50%  { opacity:0; }
+        100% { opacity:0.4; }
+      }
+      .cell-17:hover {
+         -webkit-animation: flickerAnimation 1s infinite;
+         -moz-animation: flickerAnimation 1s infinite;
+         -o-animation: flickerAnimation 1s infinite;
+          animation: flickerAnimation 1s infinite;
+      }
+
+      .cell-18:hover {
+    
+        transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+    }
+    
+    .slide-in {
+        animation: slide-in 1s forwards;
+        -webkit-animation: slide-in 1s forwards;
+    }
+    
+    .slide-out {
+        animation: slide-out 1s forwards;
+        -webkit-animation: slide-out 1s forwards;
+    }
+        
+    @keyframes slide-in {
+        100% { transform: translateX(0%); }
+    }
+    
+    @-webkit-keyframes slide-in {
+        100% { -webkit-transform: translateX(0%); }
+    }
+        
+    @keyframes slide-out {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-100%); }
+    }
+    
+    @-webkit-keyframes slide-out {
+        0% { -webkit-transform: translateX(0%); }
+        100% { -webkit-transform: translateX(-100%); }
+    }
+
+
+
+      .cell-19:hover {
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+      }
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+
+      .cell-20:hover{
+        animation: pop 0.3s linear 1;
+      }
+      @keyframes pop{
+        50%  {transform: scale(1.2);}
+      }
+    
+
+
+
+  .cell-1 {
+    background: deepskyblue;
+  }
+
+  .cell-2 {
+    background: orangered;
+  }
+  .cell-3 {
+    background: royalblue;
+  }
+  .cell-4 {
+    background: gold;
+  }
+  .cell-5 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+  }
+  .cell-6 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+  }
+  .cell-7 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+  }
+  .cell-8 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+  }
+
+.cell-9 {
+  background: deepskyblue;
+  
+}
+.cell-10 {
+  background: orangered;
+}
+.cell-11 {
+  background: royalblue;
+}
+.cell-12 {
+  background: gold;
+
+}
+.cell-13 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+}
+.cell-14 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+}
+.cell-15 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+}
+.cell-16 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+
+}
+.cell-17 {
+  background: deepskyblue;
+}
+.cell-18 {
+  background: orangered;
+}
+.cell-19 {
+  background: royalblue;
+}
+.cell-20 {
+  background: gold;
+}
+.cell-21 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+}
+.cell-22 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+}
+.cell-23 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+}
+.cell-24 {
+    width: 50px;
+    height: 1px;
+    background: beige;
+}
+
+
+  
