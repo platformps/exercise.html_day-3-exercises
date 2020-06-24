@@ -1,0 +1,25 @@
+.box{
+  background-color: orange;
+  height: 50px;
+  width: 50px;
+  top: 25%;
+  left: 25%;
+  animation-name: screenToss;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-direction: alternate;
+}
+@keyframes screenToss {
+  0%{
+    transform: translate(0px,0px) scale(1,1);
+  }
+  50%{
+    transform: translate(250px,0px) scale(.2,.2);
+
+  }
+  100%{
+    transform: translate(500px,0px) scale(1,1);
+  }
+}
