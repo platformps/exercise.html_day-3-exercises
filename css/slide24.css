@@ -1,7 +1,14 @@
+table{
+  border: 8px solid #9A25E3;
+  width: 400px;
+  height: 400px;
+}
+
 .box1 {
   width: 100px;
   height: 100px;
-  background-color: lightblue;
+  text-align: center;
+  background-color: #00FFFF;
   position: relative;
   animation-name: example;
   animation-duration: 2s;
@@ -11,9 +18,9 @@
 #mybox {animation-timing-function: linear;}
 
 @keyframes example {
-  0%   {left:0px; top:0px;}
-  25%  {left:400px; top:0px;}
-  50%  {left:0px; top:400px;}
-  75%  {left:400px; top:400px;}
-  100% {left:0px; top:0px;}
+  0%   {left:0px; top:50px;}
+  25%  {left:300px; top:50px;}
+  50%  {left:0px; top:450px;}
+  75%  {left:300px; top:450px;}
+  100% {left:0px; top:50px;}
 }
