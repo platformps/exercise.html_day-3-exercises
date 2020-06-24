@@ -1,11 +1,21 @@
 html{
-    background-color: red;
+    background-color: bisque;
 }
 
 div{
     width: 100px;
     height: 100px;
     background: linear-gradient(135deg, rgb(219, 146, 219), purple);
+    margin: auto;
+}
+
+td{
+    background-color: lightblue;
+}
+
+.animation-name{
+   text-align: center;
+   margin: auto;
 }
 
 /* Shake */
