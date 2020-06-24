@@ -1,0 +1,333 @@
+.container {
+    background-color: white;
+    color: white;
+    text-align: center;
+}
+
+.shake {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation-name: shake;
+    animation-iteration-count: 5;
+    animation-duration: 200ms;
+}
+
+@keyframes shake {
+    20%{
+        left: 20px;
+    }
+
+    50%{
+        left: 0px;
+    }
+
+    100%{
+        left: 10px;
+    }
+}
+
+.fade {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-play-state: paused;
+}
+
+.fade:hover {
+    animation-play-state: running;
+}
+
+@keyframes fade {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+    
+}
+
+.jelly {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    animation-name: jelly;
+    animation-duration: 1s;
+}
+
+@keyframes jelly {
+    10%{
+        transform: skewX(20deg);
+    }
+    35%{
+        transform: skewX(-20deg);
+    }
+    65%{
+        transform: skewX(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+    }
+}
+
+.bounce {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 10px;
+    left: 370px;
+    animation-name: bounce;
+    animation-duration: 500ms;
+    animation-iteration-count: 3;
+}
+
+@keyframes bounce {
+    25%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.tada {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    animation-name: tada;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+}
+
+@keyframes tada {
+    25%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    75%{
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: scale(1.15);
+    }
+}
+
+.groove {
+    width: 100px;
+    height: 100px;
+
+    background-color: blueviolet;
+    position: absolute;
+    top: 130px;
+    left: 130px;
+    animation-name: groove;
+    animation-duration: 200ms;
+    animation-iteration-count: 5;
+}
+
+@keyframes groove {
+    10%{
+        transform: skewX(10deg);
+        transform: rotate(10deg);
+    }
+    35%{
+        transform: skewX(-10deg);
+        transform: rotate(10deg);
+    }
+    65%{
+        transform: skewX(10deg);
+        transform: rotate(10deg);
+    }
+    100%{
+        transform: skewX(-10deg);
+    }
+}
+
+.swing {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 130px;
+    left: 250px;
+    animation-name: swing;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transform-origin: top center;
+}
+
+@keyframes swing {
+    20%{
+        transform: rotate(20deg);
+    } 
+    40%{
+    transform: rotate(-12deg); 
+    } 
+   60%{ 
+    transform: rotate(7deg); 
+    } 
+   80%{
+    transform: rotate(-3deg); 
+    } 
+   100%{
+    transform: rotate(0deg); 
+    }
+}
+
+.squeeze {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 130px;
+    left: 370px;
+    animation-name: squeeze;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes squeeze {
+    25%{
+        transform: scale(.9,1.1);
+    }
+    50%{
+        transform: scale(.85,1.15);
+    }
+    75%{
+        transform: scale(.8,1.2);
+    }
+    100%{
+        transform: scale(.75,1.25);
+    }   
+}
+
+.flicker {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    animation-name: flicker;
+    animation-duration: 500ms;
+    animation-iteration-count: 10;
+}
+
+@keyframes flicker {
+    20%{
+        opacity: .58;
+    }
+    40%{
+        opacity: .75;
+    }
+    60%{
+        opacity: 1;
+    }
+    80%{
+        opacity: .65;
+    }
+    100%{
+        opacity: .8;
+    }
+}
+
+.jerk {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 250px;
+    left: 130px;
+    animation-name: jerk;
+    animation-duration: 100ms;
+    animation-iteration-count: 4;
+}
+
+@keyframes jerk {
+    50%{
+        transform: translate3d(20px,10px,0);
+    }
+}
+
+.blink {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+}
+
+@keyframes blink {
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.pop {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 250px;
+    left: 370px;
+    animation-name: pop;
+    animation-duration: 30s;
+}
+
+@keyframes pop {
+    1%{
+        transform: scale(1.05,1.05);
+        opacity: 1;
+    }
+    2%{
+        transform: scale(1.1,1.1);
+        opacity: 1;
+    }
+    3%{
+        transform: scale(1.12,1.12);
+        opacity: 1;
+    }
+    4%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
