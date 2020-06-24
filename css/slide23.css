@@ -10,4 +10,37 @@
     height: 50px;
     width: 50px;
     position: relative;
+    background-color: blue;
+    top: -25px;
+    left: -25px;
+    animation-name: borderloop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes borderloop {
+    0%{
+        top: -25px;
+        left: -25px;
+    }
+
+    25%{
+        top: -25px;
+        left: 375px;
+    }
+
+    50%{
+        top: 375px;
+        left: 375px;
+    }
+
+    75%{
+        top: 375px;
+        left: -25px;
+    }
+
+    100%{
+        top: -25px;
+        left: -25px;
+    }
 }
