@@ -1,10 +1,11 @@
+
+
 .grid-container {
     display: grid;
     grid-template-columns: 30px 30px 30px 30px;
     grid-template-rows: 30px  30px 30px;
     column-gap: 20px;
     row-gap: 20px;
-    
   }
 
 .grid-item {
@@ -12,6 +13,7 @@
     height: 30px;
     background: linear-gradient(to left bottom, blue, white);
     box-shadow: 2px 2px 0px 0px purple;
+    transition: opacity 1s linear, transform 2s;
 }
 
 .grid-item > p {
@@ -20,50 +22,50 @@
     margin-bottom: 0px;
 }
 
-#d1 {
+#d1:hover {
 
 }
 
-#d2 {
+#d2:hover {
+    opacity: 0;
+}
+
+#d3:hover {
     
 }
 
-#d3 {
+#d4:hover {
     
 }
 
-#d4 {
+#d5:hover {
     
 }
 
-#d5 {
+#d6:hover {
     
 }
 
-#d6 {
+#d7:hover {
     
 }
 
-#d7 {
+#d8:hover {
+    transform: skew(20deg, 20deg);
+}
+
+#d9:hover {
     
 }
 
-#d8 {
+#d10:hover {
     
 }
 
-#d9 {
+#d11:hover {
     
 }
 
-#d10 {
-    
-}
-
-#d11 {
-    
-}
-
-#d12 {
+#d12:hover {
     
 }
