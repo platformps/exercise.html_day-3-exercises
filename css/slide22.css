@@ -1,0 +1,24 @@
+.curve {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    animation-name: curve;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    position: relative;
+}
+
+@keyframes curve { 
+    0% {
+        transform: scale(1, 1) translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(400px, 0px) scale(0.2, 0.2);
+    }
+
+    100% {
+        transform: scale(1, 1) translate(800px, 0px);
+    }
+}
