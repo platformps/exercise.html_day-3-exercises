@@ -14,4 +14,28 @@
   background-color: skyblue;
   margin: 0px;
   border: 0px;
+  animation-name: move;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-duration: 4s;
+  animation-direction: normal;
+
+}
+@keyframes move {
+  0%{
+    transform: translate(0px,0px);
+  }
+  25%{
+    transform: translate(400px, 0px);
+  }
+  50%{
+    transform: translate(400px, 400px);
+  }
+  75%{
+    transform: translateY(400px);
+  }
+  100%{
+    transform: translate(0px,0px);
+  }
 }
