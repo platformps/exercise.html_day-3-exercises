@@ -1,0 +1,27 @@
+.container {
+    width: 90%;
+    height: 20%;
+    margin: 10%;
+}
+
+.object {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+
+@keyframes animation {
+    100% {transform: translateX(0) scale(1, 1);}
+    75% {transform: translateX(250px) scale(0.5, 0.5);}
+    50% {transform: translateX(500px) scale(0.25, 0.25);}
+    25% {transform: translateX(750px) scale(0.5, 0.5);}
+    0% {transform: translateX(1000px) scale(1, 1);}
+}
+
+.animation {
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
