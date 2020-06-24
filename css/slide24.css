@@ -1,0 +1,46 @@
+.border {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    margin: 100px;
+    border: solid purple;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    background-color: blue;
+    top: -25px;
+    left: -25px;
+    animation-name: advanced-border-loop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes advanced-border-loop {
+    0%{
+        top: -25px;
+        left: -25px;
+    }
+
+    25%{
+        top: -25px;
+        left: 375px;
+    }
+
+    50%{
+        top: 375px;
+        left: -25px;
+    }
+
+    75%{
+        top: 375px;
+        left: 375px;
+    }
+
+    100%{
+        top: -25px;
+        left: -25px;
+    }
+}

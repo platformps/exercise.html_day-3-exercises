@@ -1,0 +1,242 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(189, 40, 189);
+    margin: 20px;
+}
+
+.flicker {
+    animation-name: flicker;
+    animation-iteration-count: infinite;
+    animation-duration: .1s;
+    animation-direction: alternate;
+}
+
+@keyframes flicker {
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: .5;
+    }
+}
+
+.shake {
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-duration: .2s;
+    animation-direction: alternate;
+}
+
+@keyframes shake {
+    from{
+        -webkit-transform: translate(0, 0);
+    }
+
+    to{
+        -webkit-transform: translate(10%, 0);
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+}
+
+@keyframes fade {
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+.jelly {
+    animation-name: jelly;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    position: relative;
+}
+
+@keyframes jelly {
+    0%{
+        transform: skewX(0deg);
+    }
+
+    50%{
+        transform: skewX(30deg);
+    }
+
+    100%{
+        transform: skewX(-30deg);
+    }
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    animation-direction: alternate;
+}
+
+@keyframes bounce {
+    from{
+        -webkit-transform: translate(0, 0);
+    }
+
+    to{
+        -webkit-transform: translate(0, 10%);
+    }
+}
+
+.tada {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    animation-name: tada;
+    animation-iteration-count: 1;
+    animation-duration: 6000s;
+    animation-delay: 10s;
+}
+
+@keyframes tada {
+    from{
+        background-color: rgb(189, 40, 189);
+    }
+
+    to{
+        background-color: rgb(189, 40, 189);
+    }
+}
+
+.pop {
+    animation-name: pop;
+    animation-iteration-count: 1;
+    animation-duration: 6000s;
+    animation-delay: 10s;
+}
+
+@keyframes pop {
+    from{
+        background-color: rgb(189, 40, 189, 0);
+    }
+
+    to{
+        background-color: rgb(189, 40, 189, 0);
+    }
+}
+
+.swing {
+    animation-name: swing;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+@keyframes swing {
+    0%{
+        -webkit-transform: translate(-10%, -10%);
+    }
+
+    50%{
+        -webkit-transform: translate(0, 0);
+    }
+
+    100%{
+        -webkit-transform: translate(10%, -10%);
+    }
+}
+
+.squeeze {
+    animation-name: squeeze;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    position: relative;
+}
+
+@keyframes squeeze {
+    0%{
+        transform: scaleX(1);
+    }
+
+    100%{
+        transform: scaleX(.1);
+    }
+}
+
+.groove {
+    animation-name: groove;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    position: relative;
+}
+
+@keyframes groove {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(359deg);
+    }
+}
+
+.jerk {
+    animation-name: jerk;
+    animation-iteration-count: infinite;
+    animation-duration: .5s;
+    animation-direction: alternate;
+}
+
+@keyframes jerk {
+    0%{
+        -webkit-transform: translate(-10%, -10%);
+    }
+
+    25%{
+        -webkit-transform: translate(10%, 10%);
+    }
+
+    50%{
+        -webkit-transform: translate(0, 0);
+    }
+
+    75%{
+        -webkit-transform: translate(-10%, 10%);
+    }
+
+    100%{
+        -webkit-transform: translate(10%, -10%);
+    }
+}
+
+.blink {
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    position: relative;
+}
+
+@keyframes blink {
+    0%{
+        transform: scaleY(1);
+    }
+
+    100%{
+        transform: scaleY(.1);
+    }
+}
