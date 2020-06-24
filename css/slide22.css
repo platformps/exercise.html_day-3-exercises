@@ -1,0 +1,27 @@
+.square {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    top: 20%;
+    animation: move 5s infinite;
+}
+
+@keyframes move {
+    0% {
+        left:400px;
+    }
+    25%{
+        left: 1000px;
+        transform: scale3d(0.2,0.2,0.2)
+    }
+    50%{
+        transform: translateX(400px);
+    }
+    75%{
+        transform: scale3d(0.2,0.2,0.2);
+    }
+    100% {
+        left: 400px;
+    }
+}
