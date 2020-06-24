@@ -1,8 +1,11 @@
-.flicker {
+.box {
     width: 100px;
     height: 100px;
     background-color: rgb(189, 40, 189);
     margin: 20px;
+}
+
+.flicker {
     animation-name: flicker;
     animation-iteration-count: infinite;
     animation-duration: .1s;
@@ -20,10 +23,6 @@
 }
 
 .shake {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(189, 40, 189);
-    margin: 20px;
     animation-name: shake;
     animation-iteration-count: infinite;
     animation-duration: .2s;
@@ -41,10 +40,6 @@
 }
 
 .fade {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(189, 40, 189);
-    margin: 20px;
     animation-name: fade;
     animation-iteration-count: infinite;
     animation-duration: 5s;
@@ -62,10 +57,6 @@
 }
 
 .jelly {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(189, 40, 189);
-    margin: 20px;
     animation-name: jelly;
     animation-iteration-count: infinite;
     animation-duration: 2s;
@@ -88,10 +79,6 @@
 }
 
 .bounce {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(189, 40, 189);
-    margin: 20px;
     animation-name: bounce;
     animation-iteration-count: infinite;
     animation-duration: .5s;
@@ -129,10 +116,6 @@
 }
 
 .pop {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(189, 40, 189);
-    margin: 20px;
     animation-name: pop;
     animation-iteration-count: 1;
     animation-duration: 6000s;
@@ -150,10 +133,6 @@
 }
 
 .swing {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(189, 40, 189);
-    margin: 20px;
     animation-name: swing;
     animation-iteration-count: infinite;
     animation-duration: 1s;
@@ -175,10 +154,6 @@
 }
 
 .squeeze {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(189, 40, 189);
-    margin: 20px;
     animation-name: squeeze;
     animation-iteration-count: infinite;
     animation-duration: 5s;
@@ -199,10 +174,6 @@
 }
 
 .groove {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(189, 40, 189);
-    margin: 20px;
     animation-name: groove;
     animation-iteration-count: infinite;
     animation-duration: .5s;
@@ -221,10 +192,6 @@
 }
 
 .jerk {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(189, 40, 189);
-    margin: 20px;
     animation-name: jerk;
     animation-iteration-count: infinite;
     animation-duration: .5s;
@@ -254,10 +221,6 @@
 }
 
 .blink {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(189, 40, 189);
-    margin: 20px;
     animation-name: blink;
     animation-iteration-count: infinite;
     animation-duration: 2s;

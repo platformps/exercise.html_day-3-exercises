@@ -1,0 +1,13 @@
+.border {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    margin: 100px;
+    border: solid purple;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
