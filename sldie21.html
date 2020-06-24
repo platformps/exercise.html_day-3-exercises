@@ -5,51 +5,238 @@
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
 <head> <!-- header begins here -->
+
+<style>
+  .box{
+    width: 100px;
+    height: 100px;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(86,72,167,1) 52%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+  
+  }
+  #shake-box:hover{
+    animation: shake 0.5s; 
+  }
+  #blink-box:hover{
+    animation: blink 2s;
+  }
+  #swing-box:hover{
+    animation: swing 1s;
+}
+  #bounce-box:hover{
+    animation: bounce 1s;
+  }
+  #squeeze-box:hover{
+    animation: squeeze 1s;
+  }
+  #flicker-box:hover{
+    animation: flicker 1s;
+  }
+  #jerk-box:hover{
+    animation: jerk .1s;
+  }
+  #tada-box:hover{
+    animation: tada 1s;
+  }
+
+  #fade-box:hover{
+    animation: fade 2s;
+  }
+
+  #pop-box:hover{
+    animation: pop .5s;
+  }
+
+  #groove-box:hover{
+    animation: groove 3s;
+  }
+  #jelly-box:hover{
+    animation: jelly 2s;
+  }
+
+  @keyframes jelly {
+    0%{transform: skew(15deg,30deg);}
+    10%{transform: skew(-15deg,-30deg);}
+    20%{transform: skew(15deg,30deg);}
+    30%{transform: skew(-15deg,-30deg);}
+    40%{transform: skew(15deg,30deg);}
+    50%{transform: skew(-15deg,-30deg);}
+    60%{transform: skew(15deg,30deg);}
+    70%{transform: skew(-15deg,-30deg);}
+    80%{transform: skew(15deg,30deg);}
+    90%{transform: skew(-15deg,-30deg);}
+    100%{transform: skew(15deg,30deg);}
+    
+
+  }
+
+  @keyframes groove {
+    0%{transform: skew(25deg);}
+    25%{transform: skew(-25deg);}
+    50%{transform: skew(25deg);}
+    75%{transform: skew(-25deg);}
+    100%{transform: skew(25deg);}
+  }
+
+  @keyframes pop {
+    0%{transform: skew(-10deg);}
+    50%{transform: skew(-50deg);}
+    100%{opacity: 0; transform: skew(-50deg) ;}
+  }
+
+ @keyframes fade {
+   0%{opacity: 1;}
+   10%{opacity: .9;}
+   20%{opacity: .8;}
+   30%{opacity: .7;}
+   40%{opacity: .6;}
+   50%{opacity: .5;}
+   50%{opacity: .4;}
+   60%{opacity: .3;}
+   70%{opacity: .2;}
+   80%{opacity: .1;}
+   90%{opacity: .05;}
+   100%{opacity: 0;}
+ } 
+
+  @keyframes tada {
+    0%{transform: rotate(-30deg);}
+    20%{transform: rotate(30deg);}
+    40%{transform: rotate(-30deg);}
+    60%{transform: rotate(30deg);}
+    80%{transform: rotate(-30deg);}
+    100%{transform: rotate(30deg);}
+  }
+
+  @keyframes jerk {
+    0%{transform: translate(15px);}
+    50%{transform:translate(15px);}
+    75%{transform: translate(-15px);}
+    100%{transform:translate(-15px);}
+  }
+  @keyframes flicker {
+    0%{opacity: 0;}
+    10%{opacity: 1;}
+    20%{opacity: 0;}
+    30%{opacity: 1;}
+    40%{opacity: 0;}
+    50%{opacity: 1;}
+    60%{opacity: 0;}
+    70%{opacity: 1;}
+    80%{opacity: 0;}
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+  }
+
+  @keyframes squeeze {
+    0%{transform: skew(15deg,15deg) ;}
+    25%{transform: skew(-15deg,-15deg);}
+    50%{transform: skew(15deg,15px);}
+    75%{transform: skew(-15deg,-15deg);}
+    100%{transform: skew(15deg,15deg);}
+  }
+
+  @keyframes bounce{
+    0%{transform: translate(0px,5px);}
+    20%{transform: translate(0px,-5px);}
+    40%{transform: translate(0px,5px);}
+    60%{transform: translate(0px,-5px);}
+    80%{transform: translate(0px,5px);}
+    100%{transform: translate(0px,-5px);}
+
+  }
+
+  @keyframes blink {
+    from {
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  @keyframes shake {
+    0%{transform: translate(1px,1px) rotate(0deg);}
+    25%{transform: translate(-2px,0px)rotate(1deg) ;}
+    50%{transform: translate(-1px,2px) rotate(-1deg);}
+    75%{transform: translate(-1px,-1px) rotate(0deg);}
+    100%{transform: translate(1px,-2px) rotate(-1deg);}   
+}
+
+@keyframes swing {
+  0%{transform: translate(5px);}
+  20%{transform: translate(-5px);}
+  40%{transform: translate(5px);}
+  60%{transform: translate(-5px);}
+  80%{transform: translate(5px);}
+  100%{transform: translate(-5px);}
+}
+
+
+
+
+
+
+
+</style>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <link href="./css/slide21.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
   <script type="text/javascript" src="./js/header-functions.js"></script>
 
 </head> <!-- header ends here -->
-<!-- ----------------------------------------------------------------- -->
-<!-- ----------------------------------------------------------------- -->
-<!-- ----------------------------------------------------------------- -->
+
+<body>
+  <!-- body begins here -->
+  <p>Shake:</p>
+  <div class="box" id="shake-box"></div>
+  <br>
+  <p>Blink:</p>
+  <div class="box" id="blink-box"></div>
+  <br>
+  <p>Swing:</p>
+  <div class="box" id="swing-box"></div>
+  <br>
+  <p>Bounce:</p>
+  <div class="box" id="bounce-box"></div>
+  <br>
+  <p>Squeeze:</p>
+  <div class = "box" id="squeeze-box"></div>
+  <br>
+  <p>Flicker:</p>
+  <div class="box" id="flicker-box"></div>
+  <br>
+  <p>Jerk:</p>
+  <div class="box" id="jerk-box"></div>
+  <br>
+  <p>Tada:</p>
+  <div class="box" id="tada-box" ></div>
+  <br>
+  <p>Fade:</p>
+  <div class="box" id = "fade-box"></div>
+  <br>
+  <p>Pop: </p>
+  <div class="box" id="pop-box"></div>
+  <br>
+  <p>
+    Groove:
+  </p>
+  <div class="box" id="groove-box"></div>
+  <br>
+  <p>Jelly</p>
+  <div class="box" id="jelly-box"  ></div>
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- ---------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------- -->
-<body> <!-- body begins here -->
-  The quickest of brown foxes
-
-
-
-
-  <!-- ====================================================== -->
-  <!-- ====================================================== -->
   <footer>
-    <!-- footer of page begins here -->
     <script type="text/javascript" src="./js/footer-functions.js"></script>
-  </footer> <!-- footer of page ends here -->
-  <!-- ====================================================== -->
-  <!-- ====================================================== -->
+  </footer> 
+
 
 </body>
-<!-- ---------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------- -->
 
 </html>
