@@ -1,0 +1,95 @@
+.swing {
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(yellow, lightgreen);
+    display: inline-block;
+    left: 600px;
+    margin-top: 20%;
+    padding: 20px;
+    box-shadow: 10px 20px 10px rgb(92, 0, 128);
+    border-radius: 5%;
+    animation-name: swing;
+    animation-duration: 4s;
+    transform: translate3d(0, 0, 0);
+    position: relative
+}
+
+@keyframes swing {
+
+    0%,
+    50%,
+    100% {
+        left: 600px;
+        height: 100px;
+        width: 100px;
+    }
+
+    5%,
+    45% {
+        left: 650px;
+        height: 110px;
+        width: 110px;
+    }
+
+    10%,
+    40% {
+        left: 700px;
+        height: 120px;
+        width: 120px;
+    }
+
+    15%,
+    35% {
+        left: 750px;
+        height: 130px;
+        width: 130px;
+    }
+
+    20%,
+    30% {
+        left: 800px;
+        height: 140px;
+        width: 140px;
+    }
+
+    25% {
+        left: 850px;
+        height: 150px;
+        width: 150px;
+    }
+
+    55%,
+    95% {
+        left: 550px;
+        height: 110px;
+        width: 110px;
+    }
+
+    60%,
+    90% {
+        left: 500px;
+        height: 120px;
+        width: 120px;
+    }
+
+    65%,
+    85% {
+        left: 450px;
+        height: 130px;
+        width: 130px;
+    }
+
+    70%,
+    80% {
+        left: 400px;
+        height: 140px;
+        width: 140px;
+    }
+
+    75% {
+        left: 350px;
+        height: 150px;
+        width: 150px;
+    }
+
+}

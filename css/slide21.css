@@ -1,0 +1,77 @@
+.shake {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(blue, purple);
+    display: inline-block;
+    padding: 20px;
+    box-shadow: 10px 20px 10px rgb(92, 0, 128);
+    border-radius: 5%;
+    animation-name: shake;
+    animation-duration: 2s;
+    transform: translate3d(0, 0, 0);
+
+}
+
+.fade {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(blue, purple);
+    display: inline-block;
+    margin-left: 20px;
+    padding: 20px;
+    box-shadow: 10px 20px 10px rgb(92, 0, 128);
+    border-radius: 5%;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+
+}
+
+@keyframes fade {
+
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
