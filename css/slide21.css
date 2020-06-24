@@ -1,8 +1,15 @@
 @keyframes shake {
-    25%{transform: translate(-5px, -5px);}
+    25% {transform: translate(-5px, -5px);}
     50% {transform: translate(5px, 5px);}
-    75%{transform: translate(-5px, -5px);}
+    75% {transform: translate(-5px, -5px);}
     100% {transform: translate(5px, 5px);}
+}
+
+@keyframes jelly {
+    25% {transform: skew(10deg);}
+    50% {transform: skew(-10deg);}
+    75% {transform: skew(10deg);}
+    100% {transform: skew(-10deg);}
 }
 
 .grid-container {
@@ -36,7 +43,7 @@
 }
 
 #d3:hover {
-    
+    animation: jelly .5s infinite;
 }
 
 #d4:hover {
