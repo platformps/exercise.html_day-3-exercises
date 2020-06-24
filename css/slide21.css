@@ -1,0 +1,116 @@
+.shake{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: shake;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+
+}
+@keyframes shake {
+    0%{ transform: translateX(0px);}
+    10%{ transform: translateX(-3px);}
+    20%{ transform: translateX(3px);}
+    30%{ transform: translateX(-3px);}
+    40%{ transform: translateX(3px);}
+    50%{ transform: translateX(-3px);}
+    60%{ transform: translateX(3px);}
+    70%{ transform: translateX(-3px);}
+    80%{ transform: translateX(3px);}
+    90%{ transform: translateX(-3px);}
+    100%{ transform: translateX(3px);}
+}
+
+.fade{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: fade;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+
+}
+@keyframes fade {
+    0%{ opacity: 1;}
+    10%{opacity: .9;}
+    20%{ opacity: .8;}
+    30%{ opacity:.7;}
+    40%{ opacity: .6;}
+    50%{ opacity: .5;}
+    60%{ opacity: .4;}
+    70%{ opacity: .3;}
+    80%{ opacity:.2;}
+    90%{ opacity: .1;}
+    100%{ opacity: 0;}
+}
+
+.jelly{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: jelly;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+    
+}
+
+@keyframes jelly {
+    0%{transform: skew(0deg);}
+    
+    10%{transform: skew(.312rad);}
+    
+    20%{transform: skew(-.300rad);}
+    
+    30%{transform: skew(.280rad);}
+    
+    40%{transform: skew(-.240rad);}
+    
+    50%{transform: skew(.212rad);}
+    
+    60%{transform: skew(-.180rad);}
+    
+    70%{transform: skew(.140rad);}
+    
+    80%{transform: skew(-.100rad);}
+    
+    90%{transform: skew(.50rad);}
+    
+    100%{transform: skew(0deg, 0deg);}
+}
+
+.bounce{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: bounce;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+    
+}
+
+@keyframes bounce {
+    0%{transform:  scaleX(7px) scaleY(-5px);}
+
+    
+    30%{transform: scaleX(0px) scaleY(0px);}
+    
+
+    
+    100%{transform: translateY(-15px);}
+}
