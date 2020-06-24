@@ -11,11 +11,13 @@ div{
 
 td{
     background-color: lightblue;
+    margin: auto;
+    text-align: center;
 }
 
 .animation-name{
-   text-align: center;
-   margin: auto;
+   background-color: pink;
+   vertical-align: middle;
 }
 
 /* Shake */
