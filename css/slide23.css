@@ -23,6 +23,7 @@ html{
     left: 50px;
     animation: blue-box-path 5s;
     animation-iteration-count: infinite;
+    transition-timing-function: linear;
 }
 
 #container{
