@@ -1,12 +1,98 @@
+th{
+  padding: 50px;
+  text-align: center;
+}
+
 div {
   width: 120px;
   height: 100px;
   border-radius: 12px;
-  background-color: lightblue;
-  background-image: linear-gradient(to bottom right, lightblue, blue);
+  background-color: pink;
+  background-image: linear-gradient(to bottom right, pink, #3F2EF8);
 }
 
-th{
-  padding: 50px;
-  text-align: center;
+#box1 {animation: shake 0.1s infinite;}
+#box2 {animation: fade 1s infinite;}
+#box3 {animation: jelly 1s infinite;}
+#box4 {animation: bounce 0.5s infinite;}
+#box5 {animation: tada 1s infinite;}
+#box6 {animation: groove 1s infinite;}
+#box7 {animation: swing 1s infinite;}
+#box8 {animation: squeeze 1s infinite;}
+#box9 {animation: flicker 1s infinite;}
+#box10 {animation: jerk 1s infinite;}
+#box11 {animation: blink 1s infinite;}
+#box12 {animation: pop 1s infinite;}
+
+
+@keyframes shake {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  50% { transform: translate(0px, -1px) rotate(-2deg); }
+  100% { transform: translate(1px, 0px) rotate(2deg); }
+}
+
+@keyframes fade {
+  0% { transform: translate(1px, 0px) rotate(0deg); }
+  50% { transform: translate(2px, 1px) rotate(-1deg); }
+  100% { transform: translate(1px, 2px) rotate(-1deg); }
+}
+
+@keyframes jelly {
+  0% { transform: translate(1px, 0px) rotate(0deg); }
+  50% { transform: translate(2px, 1px) rotate(-1deg); }
+  100% { transform: translate(1px, 2px) rotate(-1deg); }
+}
+
+@keyframes bounce {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  50% { transform: translate(0px, -20px) rotate(0deg); }
+  100% { transform: translate(0px, -1px) rotate(0deg); }
+}
+
+@keyframes tada {
+  0% { transform: translate(1px, 0px) rotate(0deg); }
+  50% { transform: translate(2px, 1px) rotate(-1deg); }
+  100% { transform: translate(1px, 2px) rotate(-1deg); }
+}
+
+@keyframes groove {
+  0% { transform: translate(1px, 0px) rotate(0deg); }
+  50% { transform: translate(2px, 1px) rotate(-1deg); }
+  100% { transform: translate(1px, 2px) rotate(-1deg); }
+}
+
+@keyframes swing {
+  0% { transform: translate(1px, 0px) rotate(0deg); }
+  50% { transform: translate(2px, 1px) rotate(-1deg); }
+  100% { transform: translate(1px, 2px) rotate(-1deg); }
+}
+
+@keyframes squeeze {
+  0% { transform: translate(0px, 0px) rotate(0deg) scale(0,0); }
+  50% { transform: translate(0px, 0px) rotate(0deg) scale(0,-1); }
+  100% { transform: translate(0px, 0px) rotate(0deg) scale(0,0); }
+}
+
+@keyframes flicker {
+  0% { transform: translate(1px, 0px) rotate(0deg); }
+  50% { transform: translate(2px, 1px) rotate(-1deg); }
+  100% { transform: translate(1px, 2px) rotate(-1deg); }
+}
+
+@keyframes jerk {
+  0% { transform: translate(1px, 0px) rotate(0deg); }
+  50% { transform: translate(2px, 1px) rotate(-1deg); }
+  100% { transform: translate(1px, 2px) rotate(-1deg); }
+}
+
+@keyframes blink {
+  0% { transform: translate(1px, 0px) rotate(0deg); }
+  50% { transform: translate(2px, 1px) rotate(-1deg); }
+  100% { transform: translate(1px, 2px) rotate(-1deg); }
+}
+
+@keyframes pop {
+  0% { transform: translate(1px, 0px) rotate(0deg); }
+  50% { transform: translate(2px, 1px) rotate(-1deg); }
+  100% { transform: translate(1px, 2px) rotate(-1deg); }
 }
