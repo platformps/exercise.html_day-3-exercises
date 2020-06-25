@@ -6,9 +6,43 @@
 <!-- ----------------------------------------------------------------- -->
 <head> <!-- header begins here -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <head> 
+
+    <style>
+      .MovingBox{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        position: relative;
+        animation-name:MovingBox;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+  
+      @keyframes MovingBox {
+        0% {background-color: aqua; left: 445px; top:-5px;}
+       25% {background-color: aqua; left: 720px; top:-5px;}
+       50% {background-color: aqua; left:445px; top:475px;}
+       75% {background-color: aqua; left:720px; top:475px;}
+       100% {background-color: aqua; left: 445px; top:-5px;}
+      } 
+  
+      .Box{
+        top: 10;
+          left: 500px;
+          position: absolute;
+          Width:200px; 
+          height:350px; 
+          background-color: white;
+          padding: 10px;
+          border: 2px solid green;
+          margin: 40;
+      }
+  
+      @keyframes Box {
+        0% {background-color: aqua; left:0px; top:0px;}
+      }
+    </style>
 
   <link href="./css/slide24.css" rel="stylesheet">
   <script type="text/javascript" src="./js/header-functions.js"></script>
@@ -17,29 +51,17 @@
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- ---------------------------------------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------- -->
 <!-- ---------------------------------------------------------------------------------- -->
 <body> <!-- body begins here -->
-  The quickest of brown foxes
-
-
-
-
-  <!-- ====================================================== -->
-  <!-- ====================================================== -->
+  <h1>Moving Box</h1>
+    
+  <div class ="MovingBox">
+    Box
+  </div>
+  <div class ="Box"></div>
+  }
   <footer>
     <!-- footer of page begins here -->
     <script type="text/javascript" src="./js/footer-functions.js"></script>
