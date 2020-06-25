@@ -1,0 +1,41 @@
+.div {
+  top:300px;
+  width: 100px;
+  height: 50px;
+  left:0px;
+  background-color: blue;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  0%{
+    width: 100px;
+    height: 50px;
+  }
+  20%{
+    width:  50px;
+    height: 20px;
+    left 1000px;
+   }
+   40%{
+    width:  20px;
+    height: 10px;
+    left 1000px;
+   }
+   60%{
+      width:  50px;
+      height: 20px;
+      left 1500px;
+    }
+  100%{
+     width: 100px;
+     height: 50px;
+      left: 1250px;
+    }
+  }
+}
+
+
+
+
