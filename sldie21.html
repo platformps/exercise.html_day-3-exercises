@@ -40,48 +40,169 @@
 <html>
 <head>
 <style>
-.grid-container {
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: auto auto auto auto;
-  background-color: white;
-  padding: 10px;
+ .shake{
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      position: absolute;
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+    } 
+
+
+
+.fade {
+      top: 10;
+      left: 200px;
+      position: absolute;
+      right: 100px;
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      opacity: 0.6;
+      transition: 0.3s;
+      animation-name:fade;
 }
 
-.grid-item {
-  height:20px;
-  width:20px;
-  background-color: rgba(0, 0, 255, 0.479);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 30px;
-  font-size: 30px;
-  text-align: center;
-}
+.fade:hover {opacity: 1}
+
+.jelly{
+      top: 10;
+      left: 400px;
+      right:300px;
+      width: 100px;
+      height: 100px;
+     background-color: blueviolet;
+     position: absolute;
+     animation-name: jelly;
+     animation-delay:2s;
+     animation-iteration-count: infinite;
+     animation-fill-mode: both;
+     animation-duration: 4s;
+
+ }
+@keyframes jelly {
+     0%{transform: skew(0deg);}
+     10%{transform: skew(.312rad);}
+     20%{transform: skew(-.300rad);}
+     30%{transform: skew(.280rad);}
+     40%{transform: skew(-.240rad);}
+     50%{transform: skew(.212rad);}
+     60%{transform: skew(-.180rad);}
+     70%{transform: skew(.140rad);}
+     80%{transform: skew(-.100rad);}
+     90%{transform: skew(.50rad);}
+     100%{transform: skew(0deg, 0deg);}
+ }
+
+
+
+ .bounce{
+  top: 10;
+      left: 600px;
+      right:300px;
+      width: 100px;
+      height: 100px;
+     background-color: olive;
+     position: relative;
+     animation-name: bounce;
+     animation-delay:2s;
+     animation-iteration-count: infinite;
+     animation-fill-mode: both;
+     animation-duration: 4s;
+
+ }
+
+ @keyframes bounce {
+     0%{transform:  scaleX(7px) scaleY(-5px);}
+     30%{transform: scaleX(0px) scaleY(0px);}
+     100%{transform: translateY(-15px);}
+ }
+ 
+ 
+
+
+ .tada{
+     top: 300;
+     width: 100px;
+     margin-top: 50px;
+     height: 100px;
+     background-color: blueviolet;
+     position: absolute;
+     animation-name: tada;
+     animation-delay:0s;
+     animation-iteration-count: infinite;
+     animation-fill-mode: both;
+     animation-duration: 1s;
+     
+ }
+
+ @keyframes tada {
+     0%{opacity:0;}
+     40%{opacity:1;}
+ }
+
+
+
+
+
+ .groove{
+     top: 200;
+     left: 200px;
+     right:200px;
+     margin-top: 50px;
+     width: 100px;
+     height: 100px;
+     background-color: blueviolet;
+     position: relative;
+     animation-name: groove;
+     animation-delay:0s;
+     animation-iteration-count: infinite;
+     animation-fill-mode: both;
+     animation-duration: 3s;
+
+ }
+
+ @keyframes groove {
+
+     100%{transform: translateY(-15px);}
+     0%{transform: translateX(-20px);}
+     25% {transform: skew(.312rad) translateX(20px);}
+     50%{transform: translateX(20px);}
+     75%  { transform:  skew(-.312rad) translateX(20px) ;}
+ } 
+
+
+
 </style>
 </head>
 <body>
 
-<h1>The grid-gap Property:</h1>
 
-<div class="grid-container">
-  <div class="grid-item">
-    
-    
-  </div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>  
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>  
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div> 
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>  
+
+  <div class="shake"></div>
+  <div class="fade"></div>
+  <div class="jelly"></div>
+  <div class="bounce"></div>
+  <div class="tada"></div>
+  <div class="groove"></div>
 </div>
 
-<p>Use the <em>grid-gap</em> property to adjust the space between the columns <em>and</em> the rows.</p>
+
 
 
 </body>
