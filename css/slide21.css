@@ -67,27 +67,26 @@
 }
 
 @keyframes jelly {
-    0%{transform: skew(0deg);}
+    0%{transform-origin: bottom;transform: skew(0rad);}
     
-    10%{transform: skew(.312rad);}
+    10%{transform-origin: bottom ;transform: skew(.312rad);}
     
-    20%{transform: skew(-.300rad);}
+    15%{transform-origin: bottom;transform: skew(-.300rad);}
     
-    30%{transform: skew(.280rad);}
+    20%{transform-origin: bottom;transform: skew(.280rad);}
     
-    40%{transform: skew(-.240rad);}
+    25%{transform-origin: bottom;transform: skew(-.240rad);}
     
-    50%{transform: skew(.212rad);}
+    30%{transform-origin: bottom;transform: skew(.212rad);}
     
-    60%{transform: skew(-.180rad);}
+    35%{transform-origin: bottom;transform: skew(-.180rad);}
     
-    70%{transform: skew(.140rad);}
+    40%{transform-origin: bottom;transform: skew(.140rad);}
     
-    80%{transform: skew(-.100rad);}
+    45%{transform-origin: bottom;transform: skew(-.100rad);}
     
-    90%{transform: skew(.50rad);}
-    
-    100%{transform: skew(0deg, 0deg);}
+  
+    60%{transform-origin: bottom;transform: skew(0rad);}
 }
 
 .bounce{
@@ -125,14 +124,14 @@
     animation-delay:0s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
-    animation-duration: 1s;
+    animation-duration: 4s;
     
 }
 
 @keyframes tada {
     0%{opacity:0;}
-
-    40%{opacity:1;}
+    49%{opacity:0;}
+    50%{opacity:1;}
  
   
    
@@ -195,7 +194,7 @@
     animation-delay:0s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
-    animation-duration: 3s;
+    animation-duration: 4s;
 
     
 }
@@ -227,15 +226,92 @@
 }
 
 @keyframes flicker {
-    5%{transform: scale(.7,1.2); background-color: red;}
-    6%{transform: scale(1,1);background-color: blueviolet;}
-   23%{transform: scale(.6,1.3); background-color: red;}
-   25%{transform: scale(1,1);background-color: blueviolet;}
-   39%{transform: scale(.7,1.2); background-color: red;}
-   40%{transform: scale(1,1);background-color: blueviolet;}
-   56%{transform: scale(.8,1.1); background-color: red;}
-   58%{transform: scale(1,1);background-color: blueviolet;}
-   79%{transform: scale(.4,1.6); background-color: red;}
-   81%{transform: scale(1,1);background-color: blueviolet;}
+    5%{transform-origin: bottom;transform: scale(.7,1.2); background-color: red;}
+    6%{transform-origin: bottom;transform: scale(1,1);background-color: blueviolet;}
+   23%{transform-origin: bottom;transform: scale(.6,1.3); background-color: red;}
+   25%{transform-origin: bottom;transform: scale(1,1);background-color: blueviolet;}
+   39%{transform-origin: bottom;transform: scale(.7,1.2); background-color: red;}
+   40%{transform-origin: bottom;transform: scale(1,1);background-color: blueviolet;}
+   56%{transform-origin: bottom;transform: scale(.8,1.1); background-color: red;}
+   58%{transform-origin: bottom;transform: scale(1,1);background-color: blueviolet;}
+   79%{transform-origin: bottom;transform: scale(.4,1.6); background-color: red;}
+   81%{transform-origin: bottom;transform: scale(1,1);background-color: blueviolet;}
    
+}
+
+.jerk{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color:blueviolet;
+    position: relative;
+    animation-name: jerk;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+
+    
+}
+
+@keyframes jerk{
+59%{transform: translate3D(0,0,0); transform-origin: bottom Left; transform: rotate(0deg);}    
+60%{transform: translate3D(15px,15px,0); transform-origin: bottom Left; transform: rotate(23deg);}
+
+89%{transform: translate3D(0,0,0); transform-origin: bottom Left; transform: rotate(0deg);} 
+90%{transform: translate3D(-15px,-15px,0); transform-origin: top Left; transform: rotate(25deg);}
+96%{transform: translate3D(0,0,0); transform-origin: top Left; transform: rotate(0deg);} 
+}
+.blink{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color:blueviolet;
+    position: relative;
+    animation-name: blink;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+
+    
+}
+
+@keyframes blink{
+    0%{ opacity: 1;}
+    10%{opacity: 1;}
+    20%{ opacity: 1;}
+    30%{ opacity:1;}
+    40%{ opacity: 0;}
+    50%{ opacity: 0;}
+    60%{ opacity: 1;}
+    70%{ opacity: 1;}
+    80%{ opacity:1;}
+    90%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+.pop{
+    width: 50px;
+    height: 50px;
+    left: 200px;
+    background-color:rgb(226, 208, 43);
+    position: relative;
+    animation-name: pop;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+
+    
+}
+
+@keyframes pop{
+    0%{ opacity: 1;}
+    20%{ transform: scale(1.2);opacity: 1;}
+    30%{     transform: scale(1.3);opacity: 1;}
+    40%{    background-color:rgb(226, 64, 43); transform: scale(1.6);opacity: 1;}
+    49%{    background-color:rgb(226, 64, 43); transform: scale(2);opacity: 1;}
+    50%{ opacity: 0;}
+    99%{ opacity: 0;}
+    100%{ background-color:rgb(192, 226, 43); transform: scale(1);opacity: 1;}
 }
