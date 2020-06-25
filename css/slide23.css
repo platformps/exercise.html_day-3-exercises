@@ -1,0 +1,25 @@
+.square1{
+    width: 500px;
+    height:500px;
+    background-color: white;
+    border: 5px solid purple;
+}
+
+.square2{
+
+    width: 200px;
+    height:200px;
+    bottom: 600px;  
+    position: relative;  
+    background-color:blue;
+    animation: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite
+    
+
+}
+@keyframes move{
+    25%{transform: translate(350px,0);}
+    50%{transform: translate(-150px,0);}
+
+}
