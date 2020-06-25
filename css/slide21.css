@@ -1,0 +1,330 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-rows:2;
+  background-color: ;
+  padding: 5px;
+  grid-column-gap:10px;
+  grid-row-gap:10px;
+}
+.grid-item {
+  background-color: blue;
+  border: 1px;
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+   height:100px;
+   width:100px;
+}
+/* animation */
+
+.animation{
+ animation:shake 0.5s;
+  /* .grid-container {
+       display: grid;
+     }When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.animate-fading{
+animation:fading 5s infinite}
+@keyframes fading{
+0%{opacity:0}
+50%{opacity:1}
+100%{opacity:0}}
+
+ @-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+     40% {-webkit-transform: translateY(-30px);}
+            60% {-webkit-transform: translateY(-15px);}
+ }
+
+ @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-30px);}
+            60% {transform: translateY(-15px);}
+         }
+
+ .bounce {
+            -webkit-animation-name: bounce;
+            animation-name: bounce;
+   }
+
+ @-webkit-keyframes tada {
+            0% {-webkit-transform: scale(1);}
+            10%, 20% {-webkit-transform: scale(0.9) rotate(-3deg);}
+            30%, 50%, 70%, 90% {-webkit-transform: scale(1.1) rotate(3deg);}
+            40%, 60%, 80% {-webkit-transform: scale(1.1) rotate(-3deg);}
+            100% {-webkit-transform: scale(1) rotate(0);}
+         }
+
+         @keyframes tada {
+            0% {transform: scale(1);}
+            10%, 20% {transform: scale(0.9) rotate(-3deg);}
+            30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);}
+            40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);}
+            100% {transform: scale(1) rotate(0);}
+         }
+
+         .tada {
+            -webkit-animation-name: tada;
+            animation-name: tada;
+         }
+
+
+
+
+
+.fade-in {
+animation: fadeIn ease 20s;
+-webkit-animation: fadeIn ease 20s;
+-moz-animation: fadeIn ease 20s;
+-o-animation: fadeIn ease 20s;
+-ms-animation: fadeIn ease 20s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@keyframes fadeOut {
+0% {opacity:1;}
+100% {opacity:0;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+body {background: #eee;}
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;
+    width: 20px; height: 20px;
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+.squeeze1{
+ -moz-transform: skewX(30deg);
+ -moz-transform: scale(1.5, 0.0);
+ -webkit-transform: skewX(30deg);
+ -webkit-transform: scale(1.5, 0.0);
+ transform: skewX(30deg);
+ transform: scale(1.5, 0.0);
+}
+
+
+.squeeze{
+ animation:squeeze 0.5s;
+  /* .grid-container {
+       display: grid;
+     }When the animation is finished, start again
+
+      */
+      animation-iteration-count: infinite;
+
+}
+@keyframes squeeze {
+    transform: translate(1.5px, 0.0) rotate(30deg);
+}
+
+.flicker{
+ animation:flicker 0.5s;
+  /* .grid-container {
+       display: grid;
+     }When the animation is finished, start again
+
+      */
+      animation-iteration-count: infinite;
+
+}
+
+@-webkit-keyframes flicker {
+	from {
+		opacity: 0.5;
+	}
+	4% {
+		opacity: 0.5;
+	}
+	6% {
+		opacity: 0.45;
+	}
+	8% {
+		opacity: 0.55;
+	}
+	10% {
+		opacity: 0.45;
+	}
+	11% {
+		opacity: 0.5;
+	}
+	12% {
+		opacity: 0.65;
+	}
+	14% {
+		opacity: 0.55;
+	}
+	16% {
+		opacity: 0.70;
+	}
+	17% {
+		opacity: 0.55;
+	}
+	19% {
+		opacity: 0.5;
+	}
+	20% {
+		opacity: 0.5;
+	}
+	24% {
+		opacity: 0.5;
+	}
+	26% {
+		opacity: 0.69;
+	}
+	28% {
+		opacity: 0.5;
+	}
+	38% {
+		opacity: 0.45;
+	}
+	40% {
+		opacity: 0.5;
+	}
+	42% {
+		opacity: 0.6;
+	}
+	44% {
+		opacity: 0.5;
+	}
+	46% {
+		opacity: 0.5;
+	}
+	56% {
+		opacity: 0.5;
+	}
+	58% {
+		opacity: 0.75;
+	}
+	60% {
+		opacity: 0.5;
+	}
+	68% {
+		opacity: 0.5;
+	}
+	70% {
+		opacity: .6; /*peak*/
+	}
+	72% {
+		opacity: 0.5;
+	}
+	93% {
+		opacity: 0.5;
+	}
+	95% {
+		opacity: .6; /*peak*/
+	}
+	97% {
+		opacity: 0.5;
+	}
+	to {
+		opacity: 0.5;
+	}
+}
+
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+
+.jerk{
+ animation:jerk 100s;
+  /* .grid-container {
+       display: grid;
+     }When the animation is finished, start again
+
+      */
+      animation-iteration-count: infinite;
+
+}
+@-webkit-keyframes jerk {
+	from {
+		opacity: 0%;
+	}
+	to {
+		opacity: 100%;
+	}
+}
+.animate-pop{
+animation:pop 1s infinite}
+@keyframes pop{
+0%{opacity:0}
+100%{opacity:1}}
