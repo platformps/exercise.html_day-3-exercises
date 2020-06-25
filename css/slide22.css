@@ -1,0 +1,38 @@
+.side{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    top: 150px;
+    background-color: rgb(192, 226, 43);
+    position: relative;
+    animation-name: side;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+}
+
+@keyframes side{
+
+5%{transform:translateX(100px) scale3d(.9, .9, .9);}
+10%{transform:translateX(200px) scale3d(.8, .8, .8);}
+15%{transform:translateX(300px) scale3d(.7, .7, .7);}
+20%{transform:translateX(400px) scale3d(.6, .6, .6);}
+25%{transform:translateX(500px) scale3d(.5, .5, .5);}
+30%{transform:translateX(600px) scale3d(.6, .6, .6);}
+35%{transform:translateX(700px) scale3d(.7, .7, .7);}
+40%{transform:translateX(800px) scale3d(.8, .8, .8);}
+45%{transform:translateX(900px) scale3d(.9, .9, .9);}
+50%{transform:translateX(1000px) scale3d(1,1,1) ; }
+55%{transform:translateX(900px) scale3d(.9, .9, .9);}
+60%{transform:translateX(800px) scale3d(.8, .8, .8);}
+65%{transform:translateX(700px) scale3d(.7, .7, .7);}
+70%{transform:translateX(600px) scale3d(.6, .6, .6);}
+75%{transform:translateX(500px)scale3d(.5, .5, .5);}
+80%{transform:translateX(400px) scale3d(.6, .6, .6);}
+85%{transform:translateX(300px) scale3d(.7, .7, .7);}
+90%{transform:translateX(200px) scale3d(.8, .8, .8);}
+95%{transform:translateX(100px) scale3d(.9, .9, .9);}
+100%{transform:translateX(0px) scale3d(1,1,1) ;}
+
+}
