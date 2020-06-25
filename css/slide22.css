@@ -1,0 +1,36 @@
+.box {
+  width: 100px;
+  height: 100px;
+  margin-top: 200px;
+  margin-left: 50px;
+  background-color: #df9c5e;
+  animation-name: pendulum;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes pendulum {
+  0% { transform: translate(5px, 0px) scale(1.0); }
+  5% { transform: translate(20px, 0px) scale(0.9);}
+  10% { transform: translate(35px, 0px) scale(0.8);}
+  15% { transform: translate(50px, 0px) scale(.7); }
+  20% { transform: translate(65px, 0px) scale(.6); }
+  25% { transform: translate(80px, 0px) scale(.5); }
+  30% { transform: translate(95px, 0px) scale(.4); }
+  35% { transform: translate(110px, 0px) scale(.3); }
+  40% { transform: translate(125px, 0px) scale(.2); }
+  45% { transform: translate(140px, 0px) scale(.1); }
+  50% { transform: translate(155px, 0px) scale(.05); }
+  55% { transform: translate(170px, 0px) scale(.1); }
+  60% { transform: translate(185px, 0px) scale(.2); }
+  65% { transform: translate(200px, 0px) scale(.3); }
+  70% { transform: translate(215px, 0px) scale(.4); }
+  75% { transform: translate(230px, 0px) scale(.5); }
+  80% { transform: translate(245px, 0px) scale(.6); }
+  85% { transform: translate(260px, 0px) scale(.7); }
+  90% { transform: translate(275px, 0px) scale(.8); }
+  100% { transform: translate(290px, 0px) scale(.9); }
+}
