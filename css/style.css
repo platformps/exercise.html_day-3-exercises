@@ -1,311 +1,467 @@
-            .wrapper {
-                display: grid;
-                grid-template-columns: 10% 10% 10% 10%;
+        .wrapper {
+            display: grid;
+            grid-template-columns: 10% 10% 10% 10%;
+        }
+        
+        .wrapper>div:nth-child(even) {
+            background-color: blue;
+            background-image: linear-gradient(blue, lightblue);
+        }
+        
+        .wrapper>div:nth-child(odd) {
+            background-color: blue;
+            background-image: linear-gradient(blue, lightblue);
+        }
+        
+        .wrapper>div {
+            padding: 1em;
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+        }
+        
+        .square {
+            height: 120px;
+            width: 150px;
+            background-color: blue;
+            background-image: linear-gradient(lightblue, blue);
+            padding: 1em;
+        }
+        
+        .table-format {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border-spacing: 40px;
+        }
+        
+        #shake:hover {
+            /* Start the shake animation and make the animation last for 0.5 seconds */
+            animation: shake 0.5s;
+            /* When the animation is finished, start again */
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
             }
-            
-            .wrapper>div:nth-child(even) {
-                background-color: blue;
-                background-image: linear-gradient(blue, lightblue);
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
             }
-            
-            .wrapper>div:nth-child(odd) {
-                background-color: blue;
-                background-image: linear-gradient(blue, lightblue);
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
             }
-            
-            .wrapper>div {
-                padding: 1em;
-                background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
             }
-            
-            .square {
-                height: 120px;
-                width: 150px;
-                background-color: blue;
-                background-image: linear-gradient(lightblue, blue);
-                padding: 1em;
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
             }
-            
-            .table-format {
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-                border-spacing: 40px;
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
             }
-            
-            #shake:hover {
-                /* Start the shake animation and make the animation last for 0.5 seconds */
-                animation: shake 0.5s;
-                /* When the animation is finished, start again */
-                animation-iteration-count: infinite;
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
             }
-            
-            @keyframes shake {
-                0% {
-                    transform: translate(1px, 1px) rotate(0deg);
-                }
-                10% {
-                    transform: translate(-1px, -2px) rotate(-1deg);
-                }
-                20% {
-                    transform: translate(-3px, 0px) rotate(1deg);
-                }
-                30% {
-                    transform: translate(3px, 2px) rotate(0deg);
-                }
-                40% {
-                    transform: translate(1px, -1px) rotate(1deg);
-                }
-                50% {
-                    transform: translate(-1px, 2px) rotate(-1deg);
-                }
-                60% {
-                    transform: translate(-3px, 1px) rotate(0deg);
-                }
-                70% {
-                    transform: translate(3px, 1px) rotate(-1deg);
-                }
-                80% {
-                    transform: translate(-1px, -1px) rotate(1deg);
-                }
-                90% {
-                    transform: translate(1px, 2px) rotate(0deg);
-                }
-                100% {
-                    transform: translate(1px, -2px) rotate(-1deg);
-                }
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
             }
-            /*             
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+        /*             
 fade out starts here do not judge my design just thank me............ */
-            
-            .square.fade:hover {
-                animation: fadeOut ease 8s;
-                -webkit-animation: fadeOut ease 8s;
-                -moz-animation: fadeOut ease 8s;
-                -o-animation: fadeOut ease 8s;
-                -ms-animation: fadeOut ease 8s;
+        
+        .square.fade:hover {
+            animation: fadeOut ease 8s;
+            -webkit-animation: fadeOut ease 8s;
+            -moz-animation: fadeOut ease 8s;
+            -o-animation: fadeOut ease 8s;
+            -ms-animation: fadeOut ease 8s;
+        }
+        
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
             }
-            
-            @keyframes fadeOut {
-                0% {
-                    opacity: 1;
-                }
-                100% {
-                    opacity: 0;
-                }
+            100% {
+                opacity: 0;
             }
-            
-            @-moz-keyframes fadeOut {
-                0% {
-                    opacity: 1;
-                }
-                100% {
-                    opacity: 0;
-                }
+        }
+        
+        @-moz-keyframes fadeOut {
+            0% {
+                opacity: 1;
             }
-            
-            @-webkit-keyframes fadeOut {
-                0% {
-                    opacity: 1;
-                }
-                100% {
-                    opacity: 0;
-                }
+            100% {
+                opacity: 0;
             }
-            
-            @-o-keyframes fadeOut {
-                0% {
-                    opacity: 1;
-                }
-                100% {
-                    opacity: 0;
-                }
+        }
+        
+        @-webkit-keyframes fadeOut {
+            0% {
+                opacity: 1;
             }
-            
-            @-ms-keyframes fadeOut {
-                0% {
-                    opacity: 1;
-                }
-                100% {
-                    opacity: 0;
-                }
+            100% {
+                opacity: 0;
             }
-            /* jelly hover starts here so you can see the jelly yummy */
-            
-            @keyframes jello {
-                11.1% {
-                    transform: none
-                }
-                22.2% {
-                    transform: skewX(-12.5deg) skewY(-12.5deg)
-                }
-                33.3% {
-                    transform: skewX(6.25deg) skewY(6.25deg)
-                }
-                44.4% {
-                    transform: skewX(-3.125deg) skewY(-3.125deg)
-                }
-                55.5% {
-                    transform: skewX(1.5625deg) skewY(1.5625deg)
-                }
-                66.6% {
-                    transform: skewX(-0.78125deg) skewY(-0.78125deg)
-                }
-                77.7% {
-                    transform: skewX(0.390625deg) skewY(0.390625deg)
-                }
-                88.8% {
-                    transform: skewX(-0.1953125deg) skewY(-0.1953125deg)
-                }
-                100% {
-                    transform: none
-                }
+        }
+        
+        @-o-keyframes fadeOut {
+            0% {
+                opacity: 1;
             }
-            
-            .jelly:hover {
-                animation: jello 2s infinite;
-                transform-origin: center
+            100% {
+                opacity: 0;
             }
-            
-            .center {
-                display: inline-block
+        }
+        
+        @-ms-keyframes fadeOut {
+            0% {
+                opacity: 1;
             }
-            
-            .jello {
-                animation: jello 2s infinite;
-                transform-origin: center
+            100% {
+                opacity: 0;
             }
-            
-            .center {
-                display: inline-block
+        }
+        /* jelly hover starts here so you can see the jelly yummy */
+        
+        @keyframes jello {
+            11.1% {
+                transform: none
             }
-            /* bouncing shape begins here */
-            
-            @keyframes bounce {
-                from {
-                    transform: translate3d(0, 0, 0);
-                }
-                to {
-                    transform: translate3d(0, 200px, 0);
-                }
+            22.2% {
+                transform: skewX(-12.5deg) skewY(-12.5deg)
             }
-            /* Prefix Support */
-            
-            .square.bounce:hover {
-                -webkit-animation-name: bounce;
-                -webkit-animation-duration: 0.5s;
-                -webkit-animation-direction: alternate;
-                -webkit-animation-timing-function: cubic-bezier( .5, 0.05, 1, .5);
-                -webkit-animation-iteration-count: infinite;
+            33.3% {
+                transform: skewX(6.25deg) skewY(6.25deg)
             }
-            
-            @-webkit-keyframes bounce {
-                from {
-                    -webkit-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
-                }
-                to {
-                    -webkit-transform: translate3d(0, 200px, 0);
-                    transform: translate3d(0, 200px, 0);
-                }
+            44.4% {
+                transform: skewX(-3.125deg) skewY(-3.125deg)
             }
-            /* tada effect starts here*/
-            
-            .square.tada:hover {
-                -webkit-animation-duration: 1s;
-                animation-duration: 1s;
-                -webkit-animation-fill-mode: both;
-                animation-fill-mode: both;
+            55.5% {
+                transform: skewX(1.5625deg) skewY(1.5625deg)
             }
-            
-            .square.tada:hover {
-                -webkit-animation-iteration-count: infinite;
-                animation-iteration-count: infinite;
+            66.6% {
+                transform: skewX(-0.78125deg) skewY(-0.78125deg)
             }
-            
-            @-webkit-keyframes tada {
-                0% {
-                    -webkit-transform: scale3d(1, 1, 1);
-                    transform: scale3d(1, 1, 1);
-                }
-                10%,
-                20% {
-                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                }
-                30%,
-                50%,
-                70%,
-                90% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                }
-                40%,
-                60%,
-                80% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                }
-                100% {
-                    -webkit-transform: scale3d(1, 1, 1);
-                    transform: scale3d(1, 1, 1);
-                }
+            77.7% {
+                transform: skewX(0.390625deg) skewY(0.390625deg)
             }
-            
-            @keyframes tada {
-                0% {
-                    -webkit-transform: scale3d(1, 1, 1);
-                    -ms-transform: scale3d(1, 1, 1);
-                    transform: scale3d(1, 1, 1);
-                }
-                10%,
-                20% {
-                    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-                }
-                30%,
-                50%,
-                70%,
-                90% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-                }
-                40%,
-                60%,
-                80% {
-                    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-                }
-                100% {
-                    -webkit-transform: scale3d(1, 1, 1);
-                    -ms-transform: scale3d(1, 1, 1);
-                    transform: scale3d(1, 1, 1);
-                }
+            88.8% {
+                transform: skewX(-0.1953125deg) skewY(-0.1953125deg)
             }
-            
-            .tada {
-                -webkit-animation-name: tada;
-                animation-name: tada;
+            100% {
+                transform: none
             }
-            /* groove animation starts here */
-            
-            .square.groove:hover {
-                position: absolute;
-                top: 35%;
-                left: 35%;
-                border: 15px groove blue;
-                display: table-cell;
-                animation: spin 15s linear infinite;
+        }
+        
+        .jelly:hover {
+            animation: jello 2s infinite;
+            transform-origin: center
+        }
+        
+        .center {
+            display: inline-block
+        }
+        
+        .jello {
+            animation: jello 2s infinite;
+            transform-origin: center
+        }
+        
+        .center {
+            display: inline-block
+        }
+        /* bouncing shape begins here */
+        
+        @keyframes bounce {
+            from {
+                transform: translate3d(0, 0, 0);
             }
-            
-            @keyframes spin {
-                from {
-                    transform: rotate(0deg);
-                }
-                to {
-                    transform: rotate(360deg);
-                }
+            to {
+                transform: translate3d(0, 200px, 0);
             }
+        }
+        /* Prefix Support */
+        
+        .square.bounce:hover {
+            -webkit-animation-name: bounce;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: cubic-bezier( .5, 0.05, 1, .5);
+            -webkit-animation-iteration-count: infinite;
+        }
+        
+        @-webkit-keyframes bounce {
+            from {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+            to {
+                -webkit-transform: translate3d(0, 200px, 0);
+                transform: translate3d(0, 200px, 0);
+            }
+        }
+        /* tada effect starts here*/
+        
+        .square.tada:hover {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+        
+        .square.tada:hover {
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+        
+        @-webkit-keyframes tada {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+            10%,
+            20% {
+                -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            }
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            }
+            40%,
+            60%,
+            80% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            }
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+        
+        @keyframes tada {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                -ms-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+            10%,
+            20% {
+                -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+            }
+            30%,
+            50%,
+            70%,
+            90% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+            }
+            40%,
+            60%,
+            80% {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+                transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+            }
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                -ms-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+        
+        .tada {
+            -webkit-animation-name: tada;
+            animation-name: tada;
+        }
+        /* groove animation starts here */
+        
+        .square.groove:hover {
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            border: 15px groove blue;
+            display: table-cell;
+            animation: spin 15s linear infinite;
+        }
+        
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        /* swing animation begins here */
+        
+        .square.swing:hover {
+            animation: swing ease-in-out 1s infinite alternate;
+            transform-origin: center -20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        @keyframes swing {
+            0% {
+                transform: rotate(3deg);
+            }
+            100% {
+                transform: rotate(-3deg);
+            }
+        }
+        /* squeeze begin here */
+        
+        .square.squeeze:hover {
+            -moz-transform: skewX(30deg);
+            -moz-transform: scale(1.5, 0.0);
+            -webkit-transform: skewX(30deg);
+            -webkit-transform: scale(1.5, 0.0);
+            transform: skewX(30deg);
+            transform: scale(1.5, 0.0);
+        }
+        
+        .square.squeeze {
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+        /* fliker animation starts here */
+        
+        @keyframes flickerAnimation {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-o-keyframes flickerAnimation {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes flickerAnimation {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @-webkit-keyframes flickerAnimation {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .square.flicker:hover {
+            -webkit-animation: flickerAnimation .5s infinite;
+            -moz-animation: flickerAnimation .5s infinite;
+            -o-animation: flickerAnimation .5s infinite;
+            animation: flickerAnimation .5s infinite;
+        }
+        /* jerky begins here */
+        
+        .jerk:hover {
+            animation: jerk 0.82s cubic-bezier(.36, .07, .19, .97) infinite;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+        
+        @keyframes jerk {
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0);
+            }
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0);
+            }
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0);
+            }
+        }
+        /* blinking starts */
+        
+        .blink:hover {
+            line-height: 50px;
+            animation: blink 0.5s linear infinite;
+        }
+        
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: .5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        /* pop transformation begins here */
+        
+        .pop:hover {
+            line-height: 50px;
+            animation: pop 3s linear infinite;
+            opacity: 0;
+            -moz-transform: scale(2, 2);
+            -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+        /* 
+            Reference:
+            Thanks to all these CSS developers for helping me.
+            https://codepen.io/procodeing/pen/MwYZbQ
+
+
+https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08
+
+*/
