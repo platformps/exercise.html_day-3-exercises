@@ -1,0 +1,29 @@
+
+div {
+		height: 100px;
+		width: 100px;
+		background-color: orange;
+		position: relative;
+		animation: box1;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+
+		/*animation-direction: alternate;*/
+	}
+
+@keyframes box1 {
+	0% {left:600px; top: 200px; width:100px; height:100px;}
+	15% {left: 300px; top: 100px; width:30px; height:30px;}
+	30% {left: 200px; top:100px;width:30px;height:30px;}
+	45% {left: 50px; top:200px;width:100px;height:100px;}
+	60% {left: 200px; top:100px;width:30px;height:30px;}
+	75% {left: 300px; top: 100px; width:30px; height:30px;}
+	/*85% {left: 400px; top: 100px; width:30px; height:30px;}*/
+	100% {left:600px; top: 200px; width:100px; height:100px;}
+	
+
+}
+
+
+
