@@ -3,25 +3,27 @@ div {
 		height: 100px;
 		width: 100px;
 		background-color: orange;
+		position: relative;
 		animation: box1;
+		animation-duration: 5s;
+		animation-timing-function: ease-in-out;
 		animation-iteration-count: infinite;
-		animation-direction: alternate;
+
+		/*animation-direction: alternate;*/
 	}
 
 @keyframes box1 {
-	0% {transform: scale(1,1);
-		transform translate(700px, 0px);}
-	35% {transform: scale(.25,.25);
-		transform translate(300px, 0px);}
-	65% {transform: scale(.20,.20);
-		transform translate(350px,0px);}
-	100% {transform: scale(1,1);
-		transform translate(0px,0px);}
+	0% {left:600px; top: 200px; width:100px; height:100px;}
+	15% {left: 300px; top: 100px; width:30px; height:30px;}
+	30% {left: 200px; top:100px;width:30px;height:30px;}
+	45% {left: 50px; top:200px;width:100px;height:100px;}
+	60% {left: 200px; top:100px;width:30px;height:30px;}
+	75% {left: 300px; top: 100px; width:30px; height:30px;}
+	/*85% {left: 400px; top: 100px; width:30px; height:30px;}*/
+	100% {left:600px; top: 200px; width:100px; height:100px;}
+	
 
 }
 
-/*animation-timing-function: linear;
-expand, change color and get a dashed border
 
 
-*/
