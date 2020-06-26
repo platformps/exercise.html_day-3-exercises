@@ -1,0 +1,317 @@
+.shake{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: shake;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+
+}
+@keyframes shake {
+    0%{ transform: translateX(0px);}
+    10%{ transform: translateX(-3px);}
+    20%{ transform: translateX(3px);}
+    30%{ transform: translateX(-3px);}
+    40%{ transform: translateX(3px);}
+    50%{ transform: translateX(-3px);}
+    60%{ transform: translateX(3px);}
+    70%{ transform: translateX(-3px);}
+    80%{ transform: translateX(3px);}
+    90%{ transform: translateX(-3px);}
+    100%{ transform: translateX(3px);}
+}
+
+.fade{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: fade;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+
+}
+@keyframes fade {
+    0%{ opacity: 1;}
+    10%{opacity: .9;}
+    20%{ opacity: .8;}
+    30%{ opacity:.7;}
+    40%{ opacity: .6;}
+    50%{ opacity: .5;}
+    60%{ opacity: .4;}
+    70%{ opacity: .3;}
+    80%{ opacity:.2;}
+    90%{ opacity: .1;}
+    100%{ opacity: 0;}
+}
+
+.jelly{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: jelly;
+    animation-delay:2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+    
+}
+
+@keyframes jelly {
+    0%{transform-origin: bottom;transform: skew(0rad);}
+    
+    10%{transform-origin: bottom ;transform: skew(.312rad);}
+    
+    15%{transform-origin: bottom;transform: skew(-.300rad);}
+    
+    20%{transform-origin: bottom;transform: skew(.280rad);}
+    
+    25%{transform-origin: bottom;transform: skew(-.240rad);}
+    
+    30%{transform-origin: bottom;transform: skew(.212rad);}
+    
+    35%{transform-origin: bottom;transform: skew(-.180rad);}
+    
+    40%{transform-origin: bottom;transform: skew(.140rad);}
+    
+    45%{transform-origin: bottom;transform: skew(-.100rad);}
+    
+  
+    60%{transform-origin: bottom;transform: skew(0rad);}
+}
+
+.bounce{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: bounce;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+    
+}
+
+@keyframes bounce {
+    0%{transform: translateY(-50px);}
+
+    5%{transform: scale(1,1);}
+ 
+    60%{transform: scale(1.2,.8);}
+    68%{transform: scale(1.5,.6);}
+    100%{transform: translateY(0px);}
+   
+}
+
+.tada{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: tada;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+    
+}
+
+@keyframes tada {
+    0%{opacity:0;}
+    49%{opacity:0;}
+    50%{opacity:1;}
+ 
+  
+   
+}
+
+.groove{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: groove;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+    
+}
+
+@keyframes groove {
+    
+0%{transform: translateX(-20px);}
+  25% {transform: skew(.312rad) translateX(20px);}
+ 50%{transform: translateX(20px);}
+  75%  { transform:  skew(-.312rad) translateX(20px) ;}
+   
+}
+
+.swing{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color: blueviolet;
+    position: relative;
+    animation-name: swing;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+
+    
+}
+
+@keyframes swing {
+    0%{transform-origin: top Left; transform: rotate(0deg);}
+    25%{transform-origin: top Left; transform: rotate(45deg);}
+   
+    75%{transform-origin: top Left; transform: rotate(-45deg);}
+    100%{transform-origin: top Left; transform: rotate(45deg);}
+
+}
+
+.squeeze{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color:rgb(202, 187, 216);
+    position: relative;
+    animation-name: squeeze;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+
+    
+}
+
+@keyframes squeeze {
+   
+
+    5%{transform: scale(.9,1.2);}
+ 
+    15%{transform: scale(.8,1.3); background-color: rgb(red, green, blue);}
+    30%{transform: scale(.7,1.4);}
+    55%{transform: scale(.6,1.5);background-color: rgb(234, 0, 255);}
+    90%{transform: scale(.5,1.6);background-color: rgb(55, 43, 226);}
+}
+
+.flicker{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color:blueviolet;
+    position: relative;
+    animation-name: flicker;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+
+    
+}
+
+@keyframes flicker {
+    5%{transform-origin: bottom;transform: scale(.7,1.2); background-color: red;}
+    6%{transform-origin: bottom;transform: scale(1,1);background-color: blueviolet;}
+   23%{transform-origin: bottom;transform: scale(.6,1.3); background-color: red;}
+   25%{transform-origin: bottom;transform: scale(1,1);background-color: blueviolet;}
+   39%{transform-origin: bottom;transform: scale(.7,1.2); background-color: red;}
+   40%{transform-origin: bottom;transform: scale(1,1);background-color: blueviolet;}
+   56%{transform-origin: bottom;transform: scale(.8,1.1); background-color: red;}
+   58%{transform-origin: bottom;transform: scale(1,1);background-color: blueviolet;}
+   79%{transform-origin: bottom;transform: scale(.4,1.6); background-color: red;}
+   81%{transform-origin: bottom;transform: scale(1,1);background-color: blueviolet;}
+   
+}
+
+.jerk{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color:blueviolet;
+    position: relative;
+    animation-name: jerk;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+
+    
+}
+
+@keyframes jerk{
+59%{transform: translate3D(0,0,0); transform-origin: bottom Left; transform: rotate(0deg);}    
+60%{transform: translate3D(15px,15px,0); transform-origin: bottom Left; transform: rotate(23deg);}
+
+89%{transform: translate3D(0,0,0); transform-origin: bottom Left; transform: rotate(0deg);} 
+90%{transform: translate3D(-15px,-15px,0); transform-origin: top Left; transform: rotate(25deg);}
+96%{transform: translate3D(0,0,0); transform-origin: top Left; transform: rotate(0deg);} 
+}
+.blink{
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    background-color:blueviolet;
+    position: relative;
+    animation-name: blink;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+
+    
+}
+
+@keyframes blink{
+    0%{ opacity: 1;}
+    10%{opacity: 1;}
+    20%{ opacity: 1;}
+    30%{ opacity:1;}
+    40%{ opacity: 0;}
+    50%{ opacity: 0;}
+    60%{ opacity: 1;}
+    70%{ opacity: 1;}
+    80%{ opacity:1;}
+    90%{ opacity: 1;}
+    100%{ opacity: 0;}
+}
+.pop{
+    width: 50px;
+    height: 50px;
+    left: 200px;
+    background-color:rgb(226, 208, 43);
+    position: relative;
+    animation-name: pop;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+
+    
+}
+
+@keyframes pop{
+    0%{ opacity: 1;}
+    20%{ transform: scale(1.2);opacity: 1;}
+    30%{     transform: scale(1.3);opacity: 1;}
+    40%{    background-color:rgb(226, 64, 43); transform: scale(1.6);opacity: 1;}
+    49%{    background-color:rgb(226, 64, 43); transform: scale(2);opacity: 1;}
+    50%{ opacity: 0;}
+    99%{ opacity: 0;}
+    100%{ background-color:rgb(192, 226, 43); transform: scale(1);opacity: 1;}
+}
