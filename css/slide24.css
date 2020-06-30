@@ -29,12 +29,20 @@
 }
 
 @keyframes change {
-    /* Change from bottom left to bottom right a quarter way through*/
-  25% { top: auto; right: 250; bottom: 250; left: auto; }
-    /* Change from bottom right to top right half way through*/
-  50% { top: 0; right: 250; bottom: auto; left: auto; }
-    /* Change from top right to top left three quarters through*/
-  75% { top: 0; right: auto; bottom: auto; left: 250; }
-    /* Change from top left to bottom left at the end*/
-  100% { top: auto; right: auto; bottom: 250; left: 250; }
+
+  0%{ top: 0px; left: 120px;}
+  33%{ top: 300px; left: 120px;}
+  66%{ top: 300px; left: 300px;}
 }
+
+    /*/* Change from bottom left to bottom right a quarter way through*/
+  /*25% { top: auto; right: 250; bottom: 250; left: auto; }
+    /* Change from bottom right to top right half way through*/
+  /*50% { top: 0; right: 250; bottom: auto; left: auto; }
+    /* Change from top right to top left three quarters through*/
+  /*75% { top: 0; right: auto; bottom: auto; left: 250; }
+    /* Change from top left to bottom left at the end*/
+  /*100% { top: auto; right: auto; bottom: 250; left: 250; }
+
+}
+
