@@ -1,0 +1,83 @@
+@keyframes shake {
+    25% {transform: translate(-5px, -5px);}
+    50% {transform: translate(5px, 5px);}
+    75% {transform: translate(-5px, -5px);}
+    100% {transform: translate(5px, 5px);}
+}
+
+@keyframes jelly {
+    25% {transform: skew(10deg);}
+    50% {transform: skew(-10deg);}
+    75% {transform: skew(10deg);}
+    100% {transform: skew(-10deg);}
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px;
+    grid-template-rows: 30px  30px 30px;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+.grid-item {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to left bottom, blue, white);
+    box-shadow: 2px 2px 0px 0px purple;
+    transition: opacity 1s linear, transform 2s;
+}
+
+.grid-item > p {
+    color: red;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+#d1:hover {
+    animation: shake 1s infinite;
+}
+
+#d2:hover {
+    opacity: 0;
+}
+
+#d3:hover {
+    animation: jelly .5s infinite;
+}
+
+#d4:hover {
+    
+}
+
+#d5:hover {
+    
+}
+
+#d6:hover {
+    
+}
+
+#d7:hover {
+    
+}
+
+#d8:hover {
+    transform: skew(20deg, 20deg);
+}
+
+#d9:hover {
+    
+}
+
+#d10:hover {
+    
+}
+
+#d11:hover {
+    
+}
+
+#d12:hover {
+    
+}
