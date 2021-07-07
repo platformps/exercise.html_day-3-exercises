@@ -1,0 +1,28 @@
+.moving-square {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    background-color: tomato;
+    animation: move;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+    0%{ transform: translateX(-500px); }
+    10%{ transform: translateX(-400px) scale(.75) }
+    20%{ transform: translateX(-300px) scale(.60); }
+    30%{ transform: translateX(-200px) scale(.45); }
+    40%{ transform: translateX(-100px) scale(.3) }
+    50%{ transform: scale(.25); }
+    60%{ transform: translateX(100px) scale(.3) }
+    70%{ transform: translateX(200px) scale(.45); }
+    80%{ transform: translateX(300px) scale(.60) }
+    90%{ transform: translateX(400px) scale(.75); }
+    100%{ transform: translateX(500px);}
+}
